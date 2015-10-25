@@ -231,8 +231,8 @@ h2.subtitle {
   ul.header-menu {
     padding-top: 0.1em;
   }
-  .fa-angle-double-down {
-	display: block;
+  i.fa-angle-double-down {
+	display: none;
   }
 }
 
