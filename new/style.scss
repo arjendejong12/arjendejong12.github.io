@@ -1,0 +1,225 @@
+/***************
+ * RESET
+ ***************/
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font: 16px/1 sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote,
+figure,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+main,
+li {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-size: inherit;
+}
+
+strong {
+    font-weight: bold;
+}
+
+a,
+button {
+    color: inherit;
+    transition: .3s;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    overflow: visible;
+    border: 0;
+    font: inherit;
+    -webkit-font-smoothing: inherit;
+    letter-spacing: inherit;
+    background: none;
+    cursor: pointer;
+}
+
+::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+:focus {
+    outline: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+
+/***************
+ * STYLES
+ ***************/
+
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: normal;
+    color: #111111;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px; // background-color: red;
+}
+
+.grid-hero {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 15em 15em;
+    grid-gap: 5rem 1rem;
+    padding: 1rem;
+    .block {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        border-radius: 8px;
+        color: #ffffff;
+        z-index: 2;
+        &.h1 {
+            grid-row: 1 / 2;
+            grid-column: 1 / 6;
+            display: flex;
+            align-items: center;
+        }
+        &.b1 {
+            background: linear-gradient(135deg, #FC6A57, #FDC45B);
+            grid-column: 6 / span 7;
+            .label {
+                grid-column: 1 / 2;
+                background-color: #57E8DE;
+                border-radius: 8px;
+                margin: 10px 10px -10px -10px;
+                font-size: 1.25rem;
+                font-weight: bold;
+                justify-content: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .project {
+                grid-column: 1 / 3;
+                grid-row: 2 / 9;
+                padding-left: 10px;
+                display: flex;
+                align-items: center;
+            }
+            .image {
+                grid-column: 3 / 5;
+                grid-row: 1 / 9;
+                background-color: gray;
+                border-radius: 8px;
+                margin: -10px -10px 10px 10px;
+                box-shadow: 0px 5px 15px 0px rgba(117, 117, 117, 1);
+                overflow: hidden;
+            }
+        }
+        &.b2 {
+            background: linear-gradient(135deg, #62CE64, #62CCCE);
+            grid-column: 1 / span 7;
+            .label {
+                grid-column: 4 / 5;
+                background-color: #CE6462;
+                border-radius: 8px;
+                margin: 10px -10px -10px 10px;
+                font-size: 1.25rem;
+                font-weight: bold;
+                justify-content: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .project {
+                grid-column: 3 / 5;
+                grid-row: 2 / 9;
+                padding-right: 10px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            .image {
+                grid-column: 1 / 3;
+                grid-row: 1 / 9;
+                background-color: gray;
+                border-radius: 8px;
+                margin: -10px 10px 10px -10px;
+                box-shadow: 0px 5px 15px 0px rgba(117, 117, 117, 1);
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+.projects {
+    height: 500px;
+    background-color: #F5F7F9;
+    z-index: 1;
+    @include angled-edge('outside top', 'upper left', #F5F7F9);
+}
+
+.grid-projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2.5rem;
+    padding: 2rem 0;
+}
+
+.card {
+    grid-column: span 1;
+    border-radius: 8px;
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    &-block {
+        flex: 1 0 auto;
+        padding: 1rem;
+        p {
+            font-weight: bold;
+        }
+    }
+}
