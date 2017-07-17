@@ -4,7 +4,7 @@
 <head>
     <title>Arjen de Jong</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -16,28 +16,28 @@
 
     <div class="hero">
         <div class="wrapper grid-hero">
-            <div class="block h1">
+            <div class="block block--intro">
                 <h1>Arjen<br>de Jong</h1>
             </div>
-            <div class="block b1">
-                <div class="label">
+            <div class="block block--first">
+                <div class="block__label">
                     WordPress
                 </div>
-                <div class="project">
+                <div class="block__project">
                     <h2>BHV Amsterdam</h2>
                 </div>
-                <div class="image">
+                <div class="block__image">
                     <img src="http://via.placeholder.com/400x300">
                 </div>
             </div>
-            <div class="block b2">
-                <div class="image">
+            <div class="block block--last">
+                <div class="block__image">
                     <img src="http://via.placeholder.com/400x300">
                 </div>
-                <div class="project">
+                <div class="block__project">
                     <h2>De Oorsprong</h2>
                 </div>
-                <div class="label">
+                <div class="block__label">
                     WordPress
                 </div>
             </div>
@@ -45,29 +45,38 @@
     </div>
 
     <div class="projects">
-        <div class="wrapper grid-projects">
-            <div class="card">
-                <img src="http://via.placeholder.com/270x360">
-                <div class="card-block">
-                    <p>Project 1</p>
-                </div>
+        <div class="wrapper">
+            <div class="text-right">
+                <p>
+                    <strong class="m-r-1">Bekijk meer projecten</strong>
+                    <img src="images/arrow-left.svg" width="16" height="16">
+                    <img src="images/arrow-right.svg" width="16" height="16">
+                </p>
             </div>
-            <div class="card">
-                <img src="http://via.placeholder.com/270x360">
-                <div class="card-block">
-                    <p>Project 2</p>
+            <div class="grid-projects">
+                <div class="card">
+                    <img src="http://via.placeholder.com/270x360">
+                    <div class="card__block">
+                        <p>Project 1</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="http://via.placeholder.com/270x360">
-                <div class="card-block">
-                    <p>Project 3</p>
+                <div class="card">
+                    <img src="http://via.placeholder.com/270x360">
+                    <div class="card__block">
+                        <p>Project 2</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="http://via.placeholder.com/270x360">
-                <div class="card-block">
-                    <p>Project 4</p>
+                <div class="card">
+                    <img src="http://via.placeholder.com/270x360">
+                    <div class="card__block">
+                        <p>Project 3</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="http://via.placeholder.com/270x360">
+                    <div class="card__block">
+                        <p>Project 4</p>
+                    </div>
                 </div>
             </div>
         </div>

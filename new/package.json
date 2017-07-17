@@ -1,0 +1,36 @@
+{
+  "name": "arjendejong-portfolio",
+  "version": "1.0.0",
+  "description": "The portfolio website of Arjen de Jong",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arjendejong12/arjendejong12.github.io.git"
+  },
+  "author": "Arjen de Jong",
+  "license": "GPL-2.0 AND MIT",
+  "homepage": "https://github.com/arjendejong12/arjendejong12.github.io",
+  "devDependencies": {
+    "browser-sync": "^2.11.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-filter": "^5.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-newer": "^1.3.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.5"
+  },
+  "scripts": {
+    "postinstall": "npm run build",
+    "build": "gulp",
+    "styles": "gulp styles",
+    "images": "gulp images",
+    "watch": "gulp watch",
+    "browsersync": "gulp browsersync"
+  }
+}
